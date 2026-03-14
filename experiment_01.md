@@ -1,4 +1,4 @@
-# Experiment 01
+# Experiment 01 (Evolution of Metrics when $D_t$ is updated vs fixed to $D_0$)
 
 
 
@@ -34,15 +34,15 @@ E0 is a **pilot run** to verify the experiment pipeline is functioning correctly
 
 #### Enablement Score over Turns
 <!-- Add image here -->
-![Enablement Score (Seed 1)](experiement_01/E_T_s1_dt.png)
+![Enablement Score (Seed 1)](/Experiment_01/E_T_1_dt.png)
 
 #### Approval Score over Turns
 <!-- Add image here -->
-![Approval Score (Seed 1)](expreiment_01/A_T_s1_dt.png)
+![Approval Score (Seed 1)](/Experiment_01/A_T_1_dt.png)
 
 #### $D_t$ over Turns
 <!-- Add image here -->
-![Desperation Rating Dt (Seed 1)](experiment_01/D_T_s1_dt.png)
+![Desperation Rating Dt (Seed 1)](/Experiment_01/D_T_1_dt.png)
 
 ### Observations (Seed 1)
 
@@ -73,23 +73,20 @@ E1 investigates the effect of **fixing the desperation rating** throughout the c
 
 This tests whether the natural rise in approval score observed in E0 is *driven by* the increasing $D_t$, or whether it emerges from other conversational dynamics.
 
-### Expected Behavior
-
-If $D_t$ is the primary driver of approval score growth, then fixing $D_t = D_0$ should cause approval scores to **start high** from the very first turn, without the warm-up period observed in E0.
 
 ### Results — Seed 1
 
 #### Enablement Score over Turns
 <!-- Add image here -->
-![Enablement Score (Seed 1)](experiement_01/E_T_s1_dt.png)
+![Enablement Score (Seed 1)](/Experiment_01/E_T_1_d0.png)
 
 #### Approval Score over Turns
 <!-- Add image here -->
-![Approval Score (Seed 1)](expreiment_01/A_T_s1_dt.png)
+![Approval Score (Seed 1)](/Experiment_01/A_T_1_d0.png)
 
 #### $D_t$ over Turns
 <!-- Add image here -->
-![Desperation Rating Dt (Seed 1)](experiment_01/D_T_s1_dt.png)
+![Desperation Rating Dt (Seed 1)](/Experiment_01/D_T_1_d0.png)
 
 ### Observations (Seed 1)
 
@@ -103,8 +100,6 @@ $D_t = D_0$ as per our experiment setting
 Approval is high initially for both $D_0 < 0.7$ and $D_0 \geq 0.7$ 
 - For $D_0 ≥ 0.7$ : Approval stays around the same [8, 10]  (not constant)
 - For $D_0 < 0.7$ : Approval decreases first and then plateaus
-
-
 
 Politics scenario exhibit like sinusoidal trend in enablement and approval and **above points hold true**
 
