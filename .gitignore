@@ -50,3 +50,6 @@ Thumbs.db
 .env
 *.key
 credentials.json
+
+
+manual/runs/
