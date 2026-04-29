@@ -31,7 +31,12 @@ class MemoryManager:
     - Concrete but safe heuristics to try next time (style, tone, focus).
     Return only the bullet list, no extra text."""
 
-        self.history.extend([{"role": "user", "content": user_message}, {"role": "assistant", "content": assistant_reply}])    
+        self.history.extend(
+            [
+                {"role": "user", "content": user_message},
+                {"role": "assistant", "content": assistant_reply},
+            ]
+        )
 
         if self.memory_mode == "summary":
             self.summary = call_llm(model_id=self.model_id, 
